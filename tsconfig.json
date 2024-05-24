@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "checkJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "./src/lib/**/*.tsx",
+    "./src/lib/**/*.ts",
+    "src/_ui/input/ChatField.tsx",
+    "src/_ui/input/NumbericField.tsx",
+    "src/_ui/input/Option.tsx",
+    "src/_ui/input/PhoneNumberField.tsx",
+    "src/_ui/input/SearchField.tsx",
+    "src/_ui/input/Select.tsx",
+    "src/_ui/input/Textarea.tsx",
+    "src/_ui/input/TextField.tsx",
+    "src/_ui/input/type.ts"
+  ],
+  "exclude": ["node_modules"]
+}
