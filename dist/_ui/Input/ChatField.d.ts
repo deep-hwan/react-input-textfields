@@ -2,16 +2,18 @@
 import React from "react";
 declare const ChatField: React.ForwardRefExoticComponent<{
     fileTab?: {
-        active?: boolean | undefined;
-        iconColor?: string | undefined;
+        loading?: boolean | undefined;
         disabled?: boolean | undefined;
         accept?: string | undefined;
-        onChange?: ((e: any) => void) | undefined;
+        onChange: (e: any) => void;
+        onClick?: (() => void) | undefined;
+        iconColor?: string | undefined;
     } | undefined;
     uploadTab?: {
-        iconColor?: string | undefined;
+        loading?: boolean | undefined;
         disabled?: boolean | undefined;
         onClick: () => void;
+        iconColor?: string | undefined;
     } | undefined;
     themes?: {
         backgroundColor?: string | undefined;

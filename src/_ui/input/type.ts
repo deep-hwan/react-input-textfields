@@ -149,17 +149,19 @@ declare global {
   // ChatField
   type ChatFieldType = {
     fileTab?: {
-      active?: boolean;
-      iconColor?: string;
+      loading?: boolean;
       disabled?: boolean;
       accept?: string;
-      onChange?: (e: any) => void;
+      onChange: (e: any) => void;
+      onClick?: () => void;
+      iconColor?: string;
     };
 
     uploadTab?: {
-      iconColor?: string;
+      loading?: boolean;
       disabled?: boolean;
       onClick: () => void;
+      iconColor?: string;
     };
 
     themes?: {
